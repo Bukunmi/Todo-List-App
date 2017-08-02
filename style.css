@@ -1,0 +1,135 @@
+/* Style */
+body {
+  background: #fff;
+  color: #6699ff;
+  font-family: 'Bad Script', cursive;
+}
+.container {
+  background: #6699ff;
+  color: #fff;
+  display: block;
+  width: 440px;
+  margin: 100px auto 0;
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  border-color: #c0c0c0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+  border-radius: 6px;
+}
+button {
+  background: #80aaff;
+  border: 0px;
+  color: #fff;
+  font-size: 15px;
+  width: 50px;
+  margin: 1px;
+  padding: 0px;
+  font-family: 'Bad Script', cursive;
+  cursor: pointer;
+}
+button:hover {
+  color: #fff;
+}
+/* Heading */
+h3,
+label[for='new-task'] {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #fff;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color:  #000000;
+}
+input[type="text"]:focus {
+  color: #fff;
+}
+
+/* New Task */
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  float: left;
+  color: #000;
+  width: 290px;
+  margin-right: 2px;
+}
+p > button:hover {
+  color: #ffff00;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  padding: 0 0 0 11px;
+  width: 250px;
+  margin-right: 2px;
+}
+li >  input[type="text"] {
+  width: 258px;
+  margin-right: 2px;
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+li > .edit:hover {
+  color: #66ffcc;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #fff;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+  color: #000;
+}
+
+ul li.editMode label {
+  display:none;
+}
