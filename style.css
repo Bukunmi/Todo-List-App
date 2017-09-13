@@ -3,6 +3,7 @@ body {
   background: #fff;
   color: #6699ff;
   font-family: 'Bad Script', cursive;
+        background: url("/background.png");
 }
 .container {
   background: #6699ff;
